@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #020a0d; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    overflow: auto; /* Ensure page is scrollable */
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with slight transparency */
+    width: 100%; /* Make nav bar full width */
+    position: fixed; /* Fix nav bar at top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure nav bar is above other content */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align nav items to the right */
+    padding-right: 20px; /* Add padding to right for spacing */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    color: white; /* Change text color for visibility */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+    color: white; /* Change text color on hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center container items horizontally */
+    padding: 20px;
+    background-color: rgb(65, 65, 65); /* Dark background for content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px; /* Space for fixed nav bar */
+    width: 80%; /* Limit width to 80% of viewport */
+    max-width: 1000px; /* Maximum width */
+}
+
+.image-placeholder {
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 20px; /* Space between image and content */
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-paragraph {
+    display: flex;
+    align-items: flex-start;
+}
+
+.first-paragraph img {
+    float: left;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.second-paragraph {
+    margin-top: 20px; /* Space between paragraphs */
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        align-items: center;
+    }
+
+    .image-placeholder {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        text-align: center;
+    }
+}
